@@ -48,6 +48,53 @@ A command-line based **Flight Booking System** developed in C, which simulates a
 - GCC compiler
 - Windows OS (uses `conio.h` and `windows.h`)
 
+---
+
+## 🔧 Key Functions Overview
+
+### ✈️ Flight & Route Management
+- `viewAllFlightsFromSourceToDestination()`  
+  Shows all available flights between a source and destination.
+- `bookFlight()`  
+  Allows a user to book a flight.
+- `cancel_booking(char* currUserName)`  
+  Enables a user to cancel a previously booked flight.
+- `assignPathToEachFlight()`  
+  Assigns available routes to flights.
+
+### 👥 User & Manager Authentication
+- `registerUser()`  
+  Registers a new user account.
+- `loginUser()`  
+  Authenticates a user login.
+- `registerManager()`  
+  Registers a manager account.
+- `loginManager()`  
+  Authenticates a manager login.
+
+### 📍 Graph Algorithms & Pathfinding
+- `dijkstra(int s, int d)`  
+  Implements Dijkstra’s algorithm for shortest path based on cost.
+- `viewAllPossiblePaths()`  
+  Lists all possible paths (routes) between two locations.
+- `addEdge(int u, int v, int cost)`  
+  Adds a connection (edge) between two locations (nodes).
+
+### 🔍 Search & Matching
+- `kmpSearch(const char *text, const char *pattern)`  
+  KMP algorithm for efficient string matching.
+- `isUsernameExists(const char *username)`  
+  Checks if a username exists using KMP.
+- `isManagerExists(const char *username)`  
+  Checks if a manager name exists using KMP.
+
+### 📁 File Handling
+- `writeBookingDetailsIntoFile(...)`  
+  Writes a user's booking details to a file.
+- `display_booked_flights(char* currUserName)`  
+  Displays all flights a user has booked.
+
+
 ### 🔨 Compile
 ```bash
 gcc flightNetWork.c -o flightApp
